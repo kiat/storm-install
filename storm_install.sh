@@ -27,7 +27,7 @@ cleanup() {
 deps() {
 	pp "Checking system dependencies..."
 	echo
-	sudo apt-get install screen daemontools uuid-dev git libtool build-essential openjdk-6-jdk unzip
+	sudo apt-get install screen daemontools uuid-dev git libtool build-essential openjdk-6-jdk unzip automake autoconf 
 	echo
 }
 
@@ -165,7 +165,7 @@ jzmq() {
 #########################################
 
 storm() {
-	STORM_VERSION="0.8.2"
+	STORM_VERSION="0.8.1"
 	STORM_DIR=$BASEDIR"/storm"
 	STORM_ZIP_URL="https://dl.dropbox.com/u/133901206/storm-"$STORM_VERSION".zip"
 	STORM_ZIP=$STORM_DIR"/storm.zip"
